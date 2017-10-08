@@ -1,0 +1,26 @@
+{
+  "name": "codesure",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start":"node server.js"
+  },
+
+  "dependencies" :{
+"express":"4.15.2",
+"http":"0.0.0",
+"nodemailer":"3.1.5",
+"body-parser":"1.17.1",
+"ejs":"2.5.6"
+},
+
+  "author": "deepaak",
+  "license": "ISC",
+  "engines": {
+    "node": "6.11.3",
+    "npm":"3.10.10"
+  }
+}
