@@ -100,6 +100,60 @@
 }
 
 
+a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #00c389;
+  font-size:14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 250px;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+  color: #FFF;
+  text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+  height: 450%;
+}
+
+/* Victoria Buttons */
+
+a.animated-button.victoria-one {
+  border: 2px solid #00c389;
+}
+a.animated-button.victoria-one:after {
+  background: #00c389;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
 </style>
 </head>
 <body class="style-1">
@@ -128,7 +182,7 @@
           <li class="active "><a href="#" class="effect-underline">Home</a></li>
           <li><a href="" class="effect-underline">Services</a></li>
           <li><a href="" class="effect-underline">About</a></li>
-          <li><a href="" class="effect-underline"><span style="background-color: #00c389;padding: 10px;border-radius: 5px;">Contact Us</span></a></li>
+          <li><a href="" class="effect-underline"><span style="background-color: #00c389;padding: 10px;border-radius: 5px;color: white;">Contact Us</span></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
@@ -182,7 +236,7 @@
 		<div class="panel panel-default" id="hv1">
          <div class="panel-body">
           <div class="col-sm-12 text-center">
-           <img src="webd.png" width="100" height="100">
+           <img src="Html-512.png" width="100" height="100">
            <h3><b>Web Development</b></h3>
            <h5 style="color: grey;margin-top: 20px;line-height: 20px;">We create awesome and fully responsive websites for your company We create awesome and fully responsive.</h5>
           </div>
@@ -193,7 +247,7 @@
 		<div class="panel panel-default" id="hv1">
          <div class="panel-body">
           <div class="col-sm-12 text-center">
-           <img src="web design.jpg" width="100" height="100">
+           <img src="if_Adaptive_design_669939.png" width="100" height="100">
             <h3><b>Web Design</b></h3>
             <h5 style="color: grey;margin-top: 20px;line-height: 20px;">We create awesome and fully responsive websites for your company We create awesome and fully responsive.</h5>
             </div>
@@ -204,7 +258,7 @@
 		<div class="panel panel-default" id="hv1">
          <div class="panel-body">
           <div class="col-sm-12 text-center">
-           <img src="cloud-computing.png" width="100" height="100">
+           <img src="cloud-flatIcon.jpg" width="100" height="100">
             <h3><b>Web Hosting</b></h3>
             <h5 style="color: grey;margin-top: 20px;line-height: 20px;">We create awesome and fully responsive websites for your company We create awesome and fully responsive.</h5>
             </div>
@@ -215,7 +269,7 @@
 		<div class="panel panel-default" id="hv1">
          <div class="panel-body">
           <div class="col-sm-12 text-center">
-           <img src="phone.png" width="100" height="100">
+           <img src="iPhone-icon.png" width="100" height="100">
            <h3><b>App Development</b></h3>
            <h5 style="color: grey;margin-top: 20px;line-height: 20px;">We create awesome and fully responsive websites for your company We create awesome and fully responsive.</h5>
            </div>
@@ -226,7 +280,7 @@
 		<div class="panel panel-default" id="hv1">
          <div class="panel-body">
           <div class="col-sm-12 text-center">
-           <img src="phone.png" width="100" height="100">
+           <img src="iPhone-icon.png" width="100" height="100">
             <h3><b>Server setup</b></h3>
             <h5 style="color: grey;margin-top: 20px;line-height: 20px;">We create awesome and fully responsive websites for your company We create awesome and fully responsive .</h5>
             </div>
@@ -237,7 +291,7 @@
 		<div class="panel panel-default" id="hv1">
          <div class="panel-body">
           <div class="col-sm-12 text-center">
-           <img src="phone.png" width="100" height="100">
+           <img src="pc1.png" width="100" height="100">
             <h3><b>Software Development</b></h3>
             <h5 style="color: grey;margin-top: 20px;line-height: 20px;">We create awesome and fully responsive websites for your company We create awesome and fully responsive.</h5>
             </div>
@@ -248,10 +302,28 @@
 </div>
 </div>
 
-
-<div class="col-sm-12" style="height: 100vh;">
-	
+<div class="col-sm-12 text-center">
+   <a href="#" class="btn btn-sm animated-button victoria-one">Start Your Project Now</a> 
 </div>
+
+<div class="col-sm-12" style="height: auto;background-image: url(laptop.jpg);background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;margin-top: 10vh;padding-top: 98px;padding-bottom: 98px">
+	<div class="col-sm-4 col-sm-push-1" style="padding-top: 60px !important;
+    padding-right: 60px !important;
+    padding-bottom: 50px !important;
+    padding-left: 60px !important;
+    background-color: #fff !important;
+    border-radius: 5px !important;background-color: white;height: auto;">
+      <h3 style="margin-bottom: 35px;font-size: 22px;"><b>Enjoy your web-site, filled with the things you care about.</b></h3>
+<p style="margin-bottom: 35px;">We’re full service which means we’ve got you covered on design and content right through to digital. You’ll form a lasting relationship with us, collaboration is central to we do.</p>
+<hr>
+<p style="margin-bottom: 35px;">Searching for it, we’ve founded Avenue with a mission of turning agricultural produce into a predictable and optimized asset.</p>
+    </div>
+</div>
+
+
 <script>
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
