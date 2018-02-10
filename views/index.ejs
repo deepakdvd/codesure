@@ -113,13 +113,13 @@ a.animated-button:link, a.animated-button:visited {
   text-transform: uppercase;
   overflow: hidden;
   letter-spacing: .08em;
-  border-radius: 0;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
   width: 250px;
+  border-radius: 3px;
 }
 a.animated-button:link:after, a.animated-button:visited:after {
   content: "";
@@ -154,9 +154,338 @@ a.animated-button.victoria-one:after {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
+
+
+
+
+
+
+.project-section{
+  position:relative;
+  padding:115px 0px 100px;
+}
+
+.project-section .filters{
+  margin-bottom:50px;
+  text-align:center;
+}
+
+.project-section.fill-width{
+  overflow:hidden;
+}
+
+.project-section.fill-width .gallery-block-two{
+  width:20%;
+  float:left;
+  padding:0px 15px;
+}
+
+.project-section.fill-width .filter-list{
+  margin:0px -15px;
+}
+
+.project-section .filters .filter-tabs{
+  position:relative;
+}
+
+.project-section .filters li{
+  position: relative;
+    display: inline-block;
+    color: #000000;
+  padding:0px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.project-section .filters .filter.active,
+.project-section .filters .filter:hover{
+    color: #00c389;
+}
+
+.project-section .filters li:after{
+  position:absolute;
+  content:'/';
+  right:-2px;
+  top:2px;
+  font-size:12px;
+  color: #000000;
+}
+
+.project-section .filters li:last-child::after{
+  display:none;
+}
+
+.gallery-block.mix,
+.gallery-block-two.mix{
+  display:none;
+}
+
+.gallery-block{
+  position:relative;
+  margin-bottom:30px;
+}
+
+.gallery-block .inner-box{
+  position:relative;
+  overflow:hidden;
+}
+
+.gallery-block .inner-box .image-box{
+  position:relative;
+}
+
+.gallery-block .inner-box .image-box img{
+  position:relative;
+  width:100%;
+  display:block;
+}
+
+.gallery-block .inner-box .image-box .overlay-box{
+  position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+  width: 100%;
+    height: 100%;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(0,195,137,0.60);
+    -webkit-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+    -webkit-transform: translate(-100%,0%);
+    -ms-transform: translate(-100%,0%);
+    -o-transform: translate(-100%,0%);
+    -moz-transform: translate(-100%,0%);
+    transform: translate(-100%,0%);
+}
+
+.gallery-block .inner-box .image-box .overlay-box .overlay-inner{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    padding: 10px 30px;
+  vertical-align: middle;
+}
+
+.gallery-block .inner-box .image-box .overlay-box .overlay-inner .content{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gallery-block .inner-box .image-box .overlay-box .content .icon{
+  position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #00c389;
+    width: 44px;
+    height: 44px;
+    margin: 0px 3px;
+    line-height: 44px;
+    border-radius: 50%;
+  background-color:#ffffff;
+  transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.gallery-block .inner-box .image-box .overlay-box .content .icon:hover{
+  color:#ffffff;
+  background-color:#00c389;
+}
+
+.gallery-block .inner-box .lower-box{
+  position:relative;
+  padding-top:20px;
+}
+
+.gallery-block .inner-box .lower-box h3{
+  position:relative;
+  font-size:20px;
+  font-weight:400;
+}
+
+.gallery-block .inner-box .lower-box h3 a{
+  color:#222222;
+  transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.gallery-block .inner-box .lower-box h3 a:hover{
+  color:#fa9928;
+}
+
+.gallery-block .inner-box .lower-box .designation{
+  position:relative;
+  font-weight:300;
+  font-size:16px;
+  color:#fa9928;
+}
+
+.gallery-block .inner-box:hover .overlay-box{
+  opacity:1;
+  -webkit-transform:translate(0%);
+  -ms-transform:translate(0%);
+  -o-transform:translate(0%);
+  -moz-transform:translate(0%);
+  transform:translate(0%);
+}
+
+.inner-box {
+  border-radius: 3px;
+}
+
+.auto-container{
+  position:static;
+  max-width:1200px;
+  padding:0px 15px;
+  margin:0 auto;
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #00c389;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #00c389;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #00c389;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loader-deactivate {
+  display: none;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
 </style>
 </head>
 <body class="style-1">
+
+<div id="preloader" class="animated">
+  <div id="loader"></div>
+</div>
 
 <div class="container-fluid" id="headtop" style="/*background-image: url(http://www.asianentrepreneur.org/wp-content/uploads/2016/02/Office-Interior-Design-Tips-How-to-Set-Up-Your-Conference-Room.jpg);*/height: 100vh;/*background-repeat: no-repeat;background-size: cover;background-position: center;*//*-webkit-filter: grayscale(70%); 
     filter: grayscale(70%);background-color: #3498db*/ ">
@@ -227,8 +556,8 @@ a.animated-button.victoria-one:after {
 <div class="container">
 <div class="row">
 <div class="col-sm-12" style="padding-top: 10vh;padding-bottom: 10vh">
-	<p class="col-sm-12 text-center" style="color: #485cc7;letter-spacing: 2px;">BUILD YOUR WEBSITE</p>
-	<h2 class="col-sm-12 text-center"><b>Give Your Startup a Jump Start!</b></h2>
+	<p class="col-sm-12 text-center" style="color: #485cc7;letter-spacing: 2px;">BUILD YOUR PRODUCT</p>
+	<h2 class="col-sm-12 text-center"><b>Give Your Idea a Jump Start!</b></h2>
 	<h3 class="col-sm-12 text-center" style="color: grey;line-height: 35px;">We craft beautiful and unique digital experiences. With more than 10 years of<br>knowledge and expertise we design and code clean websites and apps, we build<br> brands and help them succeed!</h3>
 </div>
 <div class="col-sm-12">
@@ -265,6 +594,8 @@ a.animated-button.victoria-one:after {
          </div>
         </div>
 	</div>
+</div>
+<div class="col-sm-12">
 	<div class="col-sm-4">
 		<div class="panel panel-default" id="hv1">
          <div class="panel-body">
@@ -302,14 +633,17 @@ a.animated-button.victoria-one:after {
 </div>
 </div>
 
+<div class="container-fluid">
 <div class="col-sm-12 text-center">
    <a href="#" class="btn btn-sm animated-button victoria-one">Start Your Project Now</a> 
 </div>
+</div>
 
-<div class="col-sm-12" style="height: auto;background-image: url(laptop.jpg);background-attachment: fixed;
+<div class="container-fluid" style="padding: 0;">
+<div class="col-sm-12" style="height: auto;background-image: url(robot.jpeg);background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;margin-top: 10vh;padding-top: 98px;padding-bottom: 98px">
+    background-size: cover;margin-top: 10vh;padding-top: 98px;padding-bottom: 98px;">
 	<div class="col-sm-4 col-sm-push-1" style="padding-top: 60px !important;
     padding-right: 60px !important;
     padding-bottom: 50px !important;
@@ -322,9 +656,153 @@ a.animated-button.victoria-one:after {
 <p style="margin-bottom: 35px;">Searching for it, we’ve founded Avenue with a mission of turning agricultural produce into a predictable and optimized asset.</p>
     </div>
 </div>
+</div>
 
+
+<!--Project Section-->
+<div class="container-fluid">
+        <h2 class="col-sm-12 text-center" style="margin-top: 100px;margin-bottom: 100px"><b>PORTFOLIO</b></h2>
+    <section class="project-section">
+      <div class="auto-container">
+            <!--MixitUp Galery-->
+            <div class="mixitup-gallery">
+                
+                <!--Filter-->
+                <div class="filters text-center clearfix">
+                  
+                  <ul class="filter-tabs filter-btns clearfix">
+                        <li class="active filter" data-role="button" data-filter="all">All</li>
+                        <li class="filter" data-role="button" data-filter=".business">Branding</li>
+                        <li class="filter" data-role="button" data-filter=".coaching">Logo</li>
+                        <li class="filter" data-role="button" data-filter=".financial">illustration</li>
+                        <li class="filter" data-role="button" data-filter=".investment">Video</li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="filter-list row clearfix">
+          
+                    <!--Gallery Block-->
+                    <div class="gallery-block mix all col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                              <img src="images/gallery/1.jpg" alt="">
+                                <div class="overlay-box">
+                                  <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="#" class="icon"><span class="fa fa-link"></span></a>
+                                            <a href="images/gallery/1.jpg" class="icon image-link lightbox-image" data-fancybox-group="example-gallery" title=""><span class="fa fa-search"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <!--Gallery Block-->
+                    <div class="gallery-block mix coaching business all col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                              <img src="images/gallery/2.jpg" alt="">
+                                <div class="overlay-box">
+                                  <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="#" class="icon"><span class="fa fa-link"></span></a>
+                                            <a href="images/gallery/2.jpg" class="icon image-link lightbox-image" data-fancybox-group="example-gallery" title=""><span class="fa fa-search"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <!--Gallery Block-->
+                    <div class="gallery-block mix all investment col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                              <img src="images/gallery/3.jpg" alt="">
+                                <div class="overlay-box">
+                                  <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="#" class="icon"><span class="fa fa-link"></span></a>
+                                            <a href="images/gallery/3.jpg" class="icon image-link lightbox-image" data-fancybox-group="example-gallery" title=""><span class="fa fa-search"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <!--Gallery Block-->
+                    <div class="gallery-block mix all financial col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                              <img src="images/gallery/4.jpg" alt="">
+                                <div class="overlay-box">
+                                  <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="#" class="icon"><span class="fa fa-link"></span></a>
+                                            <a href="images/gallery/4.jpg" class="icon image-link lightbox-image" data-fancybox-group="example-gallery" title=""><span class="fa fa-search"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <!--Gallery Block-->
+                    <div class="gallery-block mix coaching financial investment all col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                              <img src="images/gallery/5.jpg" alt="">
+                                <div class="overlay-box">
+                                  <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="#" class="icon"><span class="fa fa-link"></span></a>
+                                            <a href="images/gallery/5.jpg" class="icon image-link lightbox-image" data-fancybox-group="example-gallery" title=""><span class="fa fa-search"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <!--Gallery Block-->
+                    <div class="gallery-block mix all business financial col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                              <img src="images/gallery/6.jpg" alt="">
+                                <div class="overlay-box">
+                                  <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="#" class="icon"><span class="fa fa-link"></span></a>
+                                            <a href="images/gallery/6.jpg" class="icon image-link lightbox-image" data-fancybox-group="example-gallery" title=""><span class="fa fa-search"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+    <!--End Project Section-->
+
+<script src="mixitup.js"></script>
 
 <script>
+$(document).ready(function(){
+  setTimeout(function(){
+    $("#preloader").addClass("zoomOut");
+  }, 500);
+  setTimeout(function(){
+    $("#preloader").addClass("loader-deactivate");
+  }, 1000);
+});
+
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
 }
@@ -333,7 +811,13 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
+if($('.filter-list').length){
+  $('.filter-list').mixItUp({});
+}
+
 ;(function($) {
+
+
 
 $.fn.letterDrop = function() {
   // Chainability
@@ -403,6 +887,7 @@ $( 'h1' ).letterDrop();
 
 <script src="particles.js"></script>
 <script src="app.js"></script>
+<script src="smooth-scroll.js"></script>
 
 </body>
 </html>
