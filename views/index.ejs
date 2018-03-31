@@ -10,7 +10,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 <script type="text/javascript">
 	
@@ -45,8 +45,7 @@
     z-index: 99999;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: white;
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -63,7 +62,7 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.3s;
 }
@@ -479,6 +478,24 @@ a.animated-button.victoria-one:after {
   -webkit-animation-name: zoomOut;
   animation-name: zoomOut;
 }
+
+.portfolio-title {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+@media only screen and (max-width: 768px) {
+   .portfolio-title {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .project-section {
+      padding: 0;
+    }
+}
+
 </style>
 </head>
 <body class="style-1">
@@ -661,7 +678,7 @@ a.animated-button.victoria-one:after {
 
 <!--Project Section-->
 <div class="container-fluid">
-        <h2 class="col-sm-12 text-center" style="margin-top: 100px;margin-bottom: 100px"><b>PORTFOLIO</b></h2>
+        <h2 class="col-sm-12 text-center portfolio-title"><b>PORTFOLIO</b></h2>
     <section class="project-section">
       <div class="auto-container">
             <!--MixitUp Galery-->
@@ -670,7 +687,7 @@ a.animated-button.victoria-one:after {
                 <!--Filter-->
                 <div class="filters text-center clearfix">
                   
-                  <ul class="filter-tabs filter-btns clearfix">
+                  <ul class="filter-tabs filter-btns clearfix" style="padding-left: 0;">
                         <li class="active filter" data-role="button" data-filter="all">All</li>
                         <li class="filter" data-role="button" data-filter=".business">Branding</li>
                         <li class="filter" data-role="button" data-filter=".coaching">Logo</li>
