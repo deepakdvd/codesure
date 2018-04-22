@@ -16,10 +16,17 @@
 	
     $(window).scroll(function(){
   if($(window).scrollTop() > 100 && $(window).scrollTop() < 700){
-      $("#nav123,#comp-name").fadeOut("500");
+      $("#nav123").fadeOut("500");
   }
   else{
-  	$("#nav123,#comp-name").fadeIn("500");
+  	$("#nav123").fadeIn("500");
+  }
+
+  if($(window).scrollTop() > 100){
+      $("#comp-name").fadeOut("500");
+  }
+  else{
+    $("#comp-name").fadeIn("500");
   }
 });
    
