@@ -176,4 +176,13 @@ span:nth-child(2n) {
   .comp-name{
     font-size: 29px;
   }
+
+  .example3 .navbar-brand {
+    height: 65px;
+    padding: 21px;
+  }
+
+  .example3 .navbar-toggle {
+    margin: 15px 15px 15px 0;
+  }
 }
