@@ -15,7 +15,7 @@
 <script type="text/javascript">
 	
     $(window).scroll(function(){
-  if($(window).scrollTop() > 100){
+  if($(window).scrollTop() > 100 && $(window).scrollTop() < 700){
       $("#nav123,#comp-name").fadeOut("500");
   }
   else{
@@ -535,7 +535,7 @@ a.animated-button.victoria-one:after {
   font-size: 100%;
   text-align: center;">
   	<div class="example3" style="box-shadow: 5px 8.66px 30px 0 rgba(31,35,37,.078);">
-  <nav class="navbar navbar-static-top navbar-fixed-top" id="nav123">
+  <nav class="navbar navbar-static-top navbar-fixed-top" id="nav123" style="background: white">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
@@ -674,11 +674,7 @@ a.animated-button.victoria-one:after {
 </div>
 </div>
 
-<div class="container-fluid">
-<div class="col-sm-12 text-center">
-   <a href="#" class="btn btn-sm animated-button victoria-one">Start Your Project Now</a> 
-</div>
-</div>
+
 
 
 
@@ -814,7 +810,11 @@ a.animated-button.victoria-one:after {
     </section>
   </div>
     <!--End Project Section-->
-
+<div class="container-fluid">
+<div class="col-sm-12 text-center">
+   <a href="#" class="btn btn-sm animated-button victoria-one">Start Your Project Now</a> 
+</div>
+</div>
 
 <!--     <div class="container-fluid" style="padding: 0;">
 <div class="col-sm-12" style="height: auto;background-image: url(robot.jpeg);background-attachment: fixed;
